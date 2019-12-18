@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  document_date: 2019-12-18
+  document_currency: MyString
+  document_amount: 9.99
+  shipment_date: 2019-12-18
+  country_of_origin: MyString
+  incoterms: MyString
+  shipment_from: MyString
+  port_of_loading: MyString
+  port_of_discharge: MyString
+  final_destination: MyString
+  goods_description: MyText
+  consignee: MyText
+  shipper: MyText
+  notify_party: MyText
+  issuing_bank: MyText
+  remarks: MyText
+  exportlc: one
+
+two:
+  description: MyString
+  document_date: 2019-12-18
+  document_currency: MyString
+  document_amount: 9.99
+  shipment_date: 2019-12-18
+  country_of_origin: MyString
+  incoterms: MyString
+  shipment_from: MyString
+  port_of_loading: MyString
+  port_of_discharge: MyString
+  final_destination: MyString
+  goods_description: MyText
+  consignee: MyText
+  shipper: MyText
+  notify_party: MyText
+  issuing_bank: MyText
+  remarks: MyText
+  exportlc: two

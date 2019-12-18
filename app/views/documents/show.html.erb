@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @document.description %>
+</p>
+
+<p>
+  <strong>Document date:</strong>
+  <%= @document.document_date %>
+</p>
+
+<p>
+  <strong>Document currency:</strong>
+  <%= @document.document_currency %>
+</p>
+
+<p>
+  <strong>Document amount:</strong>
+  <%= @document.document_amount %>
+</p>
+
+<p>
+  <strong>Shipment date:</strong>
+  <%= @document.shipment_date %>
+</p>
+
+<p>
+  <strong>Country of origin:</strong>
+  <%= @document.country_of_origin %>
+</p>
+
+<p>
+  <strong>Incoterms:</strong>
+  <%= @document.incoterms %>
+</p>
+
+<p>
+  <strong>Shipment from:</strong>
+  <%= @document.shipment_from %>
+</p>
+
+<p>
+  <strong>Port of loading:</strong>
+  <%= @document.port_of_loading %>
+</p>
+
+<p>
+  <strong>Port of discharge:</strong>
+  <%= @document.port_of_discharge %>
+</p>
+
+<p>
+  <strong>Final destination:</strong>
+  <%= @document.final_destination %>
+</p>
+
+<p>
+  <strong>Goods description:</strong>
+  <%= @document.goods_description %>
+</p>
+
+<p>
+  <strong>Consignee:</strong>
+  <%= @document.consignee %>
+</p>
+
+<p>
+  <strong>Shipper:</strong>
+  <%= @document.shipper %>
+</p>
+
+<p>
+  <strong>Notify party:</strong>
+  <%= @document.notify_party %>
+</p>
+
+<p>
+  <strong>Issuing bank:</strong>
+  <%= @document.issuing_bank %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @document.remarks %>
+</p>
+
+<p>
+  <strong>Exportlc:</strong>
+  <%= @document.exportlc_id %>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

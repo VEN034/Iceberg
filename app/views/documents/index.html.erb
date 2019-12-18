@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Documents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Document date</th>
+      <th>Document currency</th>
+      <th>Document amount</th>
+      <th>Shipment date</th>
+      <th>Country of origin</th>
+      <th>Incoterms</th>
+      <th>Shipment from</th>
+      <th>Port of loading</th>
+      <th>Port of discharge</th>
+      <th>Final destination</th>
+      <th>Goods description</th>
+      <th>Consignee</th>
+      <th>Shipper</th>
+      <th>Notify party</th>
+      <th>Issuing bank</th>
+      <th>Remarks</th>
+      <th>Exportlc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @documents.each do |document| %>
+      <tr>
+        <td><%= document.description %></td>
+        <td><%= document.document_date %></td>
+        <td><%= document.document_currency %></td>
+        <td><%= document.document_amount %></td>
+        <td><%= document.shipment_date %></td>
+        <td><%= document.country_of_origin %></td>
+        <td><%= document.incoterms %></td>
+        <td><%= document.shipment_from %></td>
+        <td><%= document.port_of_loading %></td>
+        <td><%= document.port_of_discharge %></td>
+        <td><%= document.final_destination %></td>
+        <td><%= document.goods_description %></td>
+        <td><%= document.consignee %></td>
+        <td><%= document.shipper %></td>
+        <td><%= document.notify_party %></td>
+        <td><%= document.issuing_bank %></td>
+        <td><%= document.remarks %></td>
+        <td><%= document.exportlc_id %></td>
+        <td><%= link_to 'Show', document %></td>
+        <td><%= link_to 'Edit', edit_document_path(document) %></td>
+        <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Document', new_document_path %>
