@@ -1,0 +1,51 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lc_number: MyString
+  issue_date: 2019-12-18
+  expiry_date: 2019-12-18
+  currency: MyString
+  amount: 9.99
+  applicant: MyText
+  beneficiary: MyText
+  issuing_bank: MyText
+  tenor: MyString
+  shipment_from: MyString
+  port_of_loading: MyString
+  port_of_discharge: MyString
+  final_destination: MyString
+  latest_shipment_date: 2019-12-18
+  partial_shipment: MyString
+  transhipment: MyString
+  goods_description: MyText
+  documents_required: MyText
+  additional_conditions: MyText
+  drawee: MyText
+  available_with: MyText
+  available_by: MyString
+  remarks: MyText
+
+two:
+  lc_number: MyString
+  issue_date: 2019-12-18
+  expiry_date: 2019-12-18
+  currency: MyString
+  amount: 9.99
+  applicant: MyText
+  beneficiary: MyText
+  issuing_bank: MyText
+  tenor: MyString
+  shipment_from: MyString
+  port_of_loading: MyString
+  port_of_discharge: MyString
+  final_destination: MyString
+  latest_shipment_date: 2019-12-18
+  partial_shipment: MyString
+  transhipment: MyString
+  goods_description: MyText
+  documents_required: MyText
+  additional_conditions: MyText
+  drawee: MyText
+  available_with: MyText
+  available_by: MyString
+  remarks: MyText

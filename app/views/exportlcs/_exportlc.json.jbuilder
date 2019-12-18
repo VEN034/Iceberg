@@ -1,0 +1,2 @@
+json.extract! exportlc, :id, :lc_number, :issue_date, :expiry_date, :currency, :amount, :applicant, :beneficiary, :issuing_bank, :tenor, :shipment_from, :port_of_loading, :port_of_discharge, :final_destination, :latest_shipment_date, :partial_shipment, :transhipment, :goods_description, :documents_required, :additional_conditions, :drawee, :available_with, :available_by, :remarks, :created_at, :updated_at
+json.url exportlc_url(exportlc, format: :json)

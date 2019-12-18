@@ -1,0 +1,132 @@
+<%= form_with(model: exportlc, local: true) do |form| %>
+  <% if exportlc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(exportlc.errors.count, "error") %> prohibited this exportlc from being saved:</h2>
+
+      <ul>
+        <% exportlc.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :lc_number %>
+    <%= form.text_field :lc_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :issue_date %>
+    <%= form.date_select :issue_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expiry_date %>
+    <%= form.date_select :expiry_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :currency %>
+    <%= form.text_field :currency %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :applicant %>
+    <%= form.text_area :applicant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beneficiary %>
+    <%= form.text_area :beneficiary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :issuing_bank %>
+    <%= form.text_area :issuing_bank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tenor %>
+    <%= form.text_field :tenor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shipment_from %>
+    <%= form.text_field :shipment_from %>
+  </div>
+
+  <div class="field">
+    <%= form.label :port_of_loading %>
+    <%= form.text_field :port_of_loading %>
+  </div>
+
+  <div class="field">
+    <%= form.label :port_of_discharge %>
+    <%= form.text_field :port_of_discharge %>
+  </div>
+
+  <div class="field">
+    <%= form.label :final_destination %>
+    <%= form.text_field :final_destination %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latest_shipment_date %>
+    <%= form.date_select :latest_shipment_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :partial_shipment %>
+    <%= form.text_field :partial_shipment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transhipment %>
+    <%= form.text_field :transhipment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goods_description %>
+    <%= form.text_area :goods_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :documents_required %>
+    <%= form.text_area :documents_required %>
+  </div>
+
+  <div class="field">
+    <%= form.label :additional_conditions %>
+    <%= form.text_area :additional_conditions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drawee %>
+    <%= form.text_area :drawee %>
+  </div>
+
+  <div class="field">
+    <%= form.label :available_with %>
+    <%= form.text_area :available_with %>
+  </div>
+
+  <div class="field">
+    <%= form.label :available_by %>
+    <%= form.text_field :available_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :remarks %>
+    <%= form.text_area :remarks %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

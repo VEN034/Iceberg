@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Exportlcs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lc number</th>
+      <th>Issue date</th>
+      <th>Expiry date</th>
+      <th>Currency</th>
+      <th>Amount</th>
+      <th>Applicant</th>
+      <th>Beneficiary</th>
+      <th>Issuing bank</th>
+      <th>Tenor</th>
+      <th>Shipment from</th>
+      <th>Port of loading</th>
+      <th>Port of discharge</th>
+      <th>Final destination</th>
+      <th>Latest shipment date</th>
+      <th>Partial shipment</th>
+      <th>Transhipment</th>
+      <th>Goods description</th>
+      <th>Documents required</th>
+      <th>Additional conditions</th>
+      <th>Drawee</th>
+      <th>Available with</th>
+      <th>Available by</th>
+      <th>Remarks</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exportlcs.each do |exportlc| %>
+      <tr>
+        <td><%= exportlc.lc_number %></td>
+        <td><%= exportlc.issue_date %></td>
+        <td><%= exportlc.expiry_date %></td>
+        <td><%= exportlc.currency %></td>
+        <td><%= exportlc.amount %></td>
+        <td><%= exportlc.applicant %></td>
+        <td><%= exportlc.beneficiary %></td>
+        <td><%= exportlc.issuing_bank %></td>
+        <td><%= exportlc.tenor %></td>
+        <td><%= exportlc.shipment_from %></td>
+        <td><%= exportlc.port_of_loading %></td>
+        <td><%= exportlc.port_of_discharge %></td>
+        <td><%= exportlc.final_destination %></td>
+        <td><%= exportlc.latest_shipment_date %></td>
+        <td><%= exportlc.partial_shipment %></td>
+        <td><%= exportlc.transhipment %></td>
+        <td><%= exportlc.goods_description %></td>
+        <td><%= exportlc.documents_required %></td>
+        <td><%= exportlc.additional_conditions %></td>
+        <td><%= exportlc.drawee %></td>
+        <td><%= exportlc.available_with %></td>
+        <td><%= exportlc.available_by %></td>
+        <td><%= exportlc.remarks %></td>
+        <td><%= link_to 'Show', exportlc %></td>
+        <td><%= link_to 'Edit', edit_exportlc_path(exportlc) %></td>
+        <td><%= link_to 'Destroy', exportlc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exportlc', new_exportlc_path %>

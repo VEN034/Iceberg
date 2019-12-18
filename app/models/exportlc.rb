@@ -1,0 +1,2 @@
+class Exportlc < ApplicationRecord
+end
